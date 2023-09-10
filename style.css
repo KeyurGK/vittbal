@@ -1,0 +1,75 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    180deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(120deg 100% 8%) 47%,
+    hsl(120deg 100% 12%) 65%,
+    hsl(120deg 100% 17%) 75%,
+    hsl(104deg 100% 22%) 81%,
+    hsl(96deg 85% 29%) 86%,
+    hsl(97deg 57% 40%) 90%,
+    hsl(97deg 48% 51%) 93%,
+    hsl(97deg 62% 62%) 97%,
+    hsl(96deg 88% 73%) 100%
+  );
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container_title {
+  font-size: 42px;
+  text-align: center;
+  color: #adf77c;
+}
+
+.deposit > h3 {
+  font-size: 28px;
+  color: #adf77c;
+}
+#deposit_ip {
+  border-color: #adf77c;
+  background-color: transparent;
+  color: #adf77c;
+}
+.deposit_btn {
+  margin-top: 5%;
+  padding: 3%;
+  width: 30%;
+  cursor: pointer;
+  border-color: #adf77c;
+  background-color: transparent;
+  color: #adf77c;
+  text-transform: uppercase;
+}
+.balance {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.balance_btn > button {
+  cursor: pointer;
+  border-color: #adf77c;
+  background-color: transparent;
+  color: #adf77c;
+  text-transform: uppercase;
+  margin-bottom: 30%;
+  padding: 3%;
+  width: 60%;
+}
+
+.balance_op > input {
+  margin-bottom: 30%;
+  margin-top: 7%;
+  border-color: #adf77c;
+  background-color: transparent;
+  color: #adf77c;
+}
