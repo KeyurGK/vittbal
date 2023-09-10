@@ -4,15 +4,19 @@ body {
   background-image: linear-gradient(
     180deg,
     hsl(0deg 0% 0%) 0%,
-    hsl(120deg 100% 8%) 47%,
-    hsl(120deg 100% 12%) 65%,
-    hsl(120deg 100% 17%) 75%,
-    hsl(104deg 100% 22%) 81%,
-    hsl(96deg 85% 29%) 86%,
-    hsl(97deg 57% 40%) 90%,
-    hsl(97deg 48% 51%) 93%,
-    hsl(97deg 62% 62%) 97%,
-    hsl(96deg 88% 73%) 100%
+    hsl(120deg 100% 9%) 7%,
+    hsl(120deg 100% 15%) 13%,
+    hsl(102deg 100% 22%) 20%,
+    hsl(97deg 66% 35%) 28%,
+    hsl(97deg 47% 50%) 35%,
+    hsl(96deg 68% 65%) 43%,
+    hsl(96deg 68% 65%) 51%,
+    hsl(97deg 47% 50%) 59%,
+    hsl(97deg 66% 35%) 67%,
+    hsl(102deg 100% 22%) 76%,
+    hsl(120deg 100% 15%) 84%,
+    hsl(120deg 100% 9%) 92%,
+    hsl(0deg 0% 0%) 100%
   );
   overflow: hidden;
 }
@@ -30,26 +34,27 @@ body {
 
 .deposit > h3 {
   font-size: 28px;
-  color: #adf77c;
+  color: #000000;
 }
 #deposit_ip {
-  border-color: #adf77c;
+  border-color: #020202;
   background-color: transparent;
-  color: #adf77c;
+  color: #020202;
 }
 .deposit_btn {
   margin-top: 5%;
   padding: 3%;
-  width: 30%;
+  width: 25%;
   cursor: pointer;
-  border-color: #adf77c;
+  border-color: #000000;
   background-color: transparent;
-  color: #adf77c;
+  color: #000000;
   text-transform: uppercase;
 }
 .balance {
   margin-top: 20%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -58,18 +63,36 @@ body {
 .balance_btn > button {
   cursor: pointer;
   border-color: #adf77c;
-  background-color: transparent;
+  background-color: black;
   color: #adf77c;
   text-transform: uppercase;
-  margin-bottom: 30%;
+  margin-bottom: 10%;
   padding: 3%;
   width: 60%;
 }
 
-.balance_op > input {
-  margin-bottom: 30%;
-  margin-top: 7%;
-  border-color: #adf77c;
+.balance > input {
+  margin-top: 5%;
+  border-color: #ffffff;
   background-color: transparent;
-  color: #adf77c;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .deposit_btn {
+    padding: 1%;
+    width: 20%;
+    margin-top: 3%;
+  }
+  .balance {
+    margin-top: 5%;
+    flex-direction: row;
+  }
+
+  .balance_btn > button {
+    margin-bottom: 10%;
+  }
+  .balance > input {
+    margin-top: -5%;
+  }
 }

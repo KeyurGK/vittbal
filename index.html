@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VittBal</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js"
+      type="application/javascript"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -12,30 +16,30 @@
       <div class="deposit">
         <h3>
           Deposit :
-          <span><input type="number" placeholder="0" id="deposit_ip" /></span>
+          <span
+            ><input
+              type="number"
+              placeholder="0"
+              id="deposit_ip"
+              inputmode="numeric"
+          /></span>
         </h3>
       </div>
       <button class="deposit_btn">Set Deposit</button>
       <div class="balance">
         <div class="balance_btn">
-          <button>Update Balance</button>
-          <button>Current Balance</button>
+          <button class="update_btn">Update Balance</button>
+          <button class="current_btn">Current Balance</button>
         </div>
-        <div class="balance_op">
-          <input
-            type="number"
-            placeholder="0"
-            inputmode="numeric"
-            id="updateBalance_op"
-          />
-          <input
-            type="number"
-            placeholder="0"
-            inputmode="numeric"
-            id="currentBalance_op"
-          />
-        </div>
+        <input
+          type="number"
+          placeholder="0"
+          inputmode="numeric"
+          id="currentBalance_op"
+          readonly="true"
+        />
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
